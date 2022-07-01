@@ -71,6 +71,11 @@ const Arrow = styled.div`
     margin: auto;
     opacity: .5;
     z-index: 2;
+    transition: all .5s ease;
+    &:hover {
+        background-color: #e9f5e5;
+        transform: scale(1.1)
+    }
 `   
 
 // end style
