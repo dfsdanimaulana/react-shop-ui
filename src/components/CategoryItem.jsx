@@ -35,8 +35,7 @@ const Button = styled.button`
     font-weight: 600;
 `
 
-
-export const CategoryItem = ({item}) => {
+export default function CategoryItem({item}) {
   return (
     <Container>
         <Image src={item.img}/>

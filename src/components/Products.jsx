@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Product } from "./Product"
+import Product from "./Product"
 import { popularProducts } from "../data"
 
 const Container = styled.div`
@@ -9,7 +9,7 @@ const Container = styled.div`
     justify-content: space-between;
 `
 
-export const Products = () => {
+export default function Products() {
   return (
     <Container>
         {popularProducts && popularProducts.map(item => (

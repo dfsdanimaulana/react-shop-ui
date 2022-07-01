@@ -11,7 +11,7 @@ const Container = styled.div`
     font-weight: 500;
 `
 
-export const Announcement = () => {
+export default function Announcement() {
   return (
     <Container>Free for handsome people only, get 30% discount</Container>
   )

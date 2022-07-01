@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { categories } from '../data'
-import { CategoryItem } from "./CategoryItem"
+import CategoryItem from "./CategoryItem"
 
 const Container = styled.div`
     display: flex;
@@ -8,7 +8,7 @@ const Container = styled.div`
     justify-content: space-between;
 `
 
-export const Categories = () => {
+export default function Categories() {
   return (
     <Container>
         {categories && categories.map(item => (

@@ -67,9 +67,9 @@ const Icon = styled.div`
     }
 `
 
-export const Product = ({item}) => {
+export default function Product({item}) {
   return (
-    <Container>
+      <Container>
         <Circle />
         <Image src={item.img}/>
         <Info>

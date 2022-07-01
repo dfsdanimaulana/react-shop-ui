@@ -61,8 +61,7 @@ const MenuItem = styled.div`
 
 // end style
 
-
-export const Navbar = () => {
+export default function Navbar() {
   return (
     <Container>
         <Wrapper>

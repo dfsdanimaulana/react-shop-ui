@@ -80,8 +80,8 @@ const Arrow = styled.div`
 
 // end style
 
-export const Slider = () => {
-    const [slideIndex, setSlideIndex] = useState(0)
+export default function Slider() {
+  const [slideIndex, setSlideIndex] = useState(0)
 
     const handleClick = (direction) => {
         if (direction === "left") {
