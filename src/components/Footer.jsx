@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { mobile } from "../responsive"
 
 // icons
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined'
@@ -9,6 +10,9 @@ import { Map, Phone, MailOutline } from "@mui/icons-material";
 
 const Container = styled.div`
     display: flex;
+     ${mobile({
+        flexDirection: 'column',
+    })}
 `
 const Left = styled.div`
     flex: 1;
@@ -19,10 +23,16 @@ const Left = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+     ${mobile({
+        display: "none"
+    })}
 `
 const Right = styled.div`
     flex: 1;  
     padding: 20px;  
+     ${mobile({
+        backgroundColor: '#f5f5f5',
+    })}
 `
 
 const Logo = styled.h1``

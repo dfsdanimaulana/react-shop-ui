@@ -1,6 +1,7 @@
 import { useState } from "react"
 import styled from "styled-components"
 import { sliderItems } from '../data'
+import { mobile } from '../responsive'
 
 // icons
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined'
@@ -13,6 +14,9 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+     ${mobile({
+        display: 'none'
+    })}
 
 `
 const Wrapper = styled.div`
