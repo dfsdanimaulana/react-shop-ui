@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import { mobile } from '../responsive'
 
@@ -102,8 +103,24 @@ export default function Navbar() {
                 <Logo>DAN.</Logo>
             </Center>
             <Right>
-                <MenuItem>Register</MenuItem>
-                <MenuItem>Sign In</MenuItem>
+                 <MenuItem>
+                    <Link to='/'>Home</Link>
+                </MenuItem>
+                <MenuItem>
+                    <Link to='/cart'>Cart</Link>
+                </MenuItem>
+                <MenuItem>
+                    <Link to='/productlist'>Product List</Link>
+                </MenuItem>
+                <MenuItem>
+                    <Link to='/product'>Product</Link>
+                </MenuItem>
+               <MenuItem>
+                    <Link to='/login'>Login</Link>
+                </MenuItem>
+                <MenuItem>
+                    <Link to='/register'>Register</Link>
+                </MenuItem>
                 <MenuItem>
                     <Badge badgeContent={4} color="success">
                         <ShoppingCartOutlinedIcon />
